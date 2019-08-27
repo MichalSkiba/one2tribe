@@ -34,7 +34,7 @@ public class UserController implements ErrorController {
     @POST
     @Produces(value = "text/html")
     @RequestMapping(value = "/add/{name}")
-    public User saveBeer(@PathVariable String name) throws Exception{
+    public User saveBeer(@PathVariable String name) {
         return userService.saveBeer(name);
     }
 
